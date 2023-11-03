@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+.cuerpoCalculadora{
+    border: 2px black solid;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    gap: 10px;
+    align-items: center;
+
+    padding: 10px;
+    background-image: url(./assets/backgroung.avif);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin:auto;
+
+}
+
+.contenedorBotones{
+    display: flex;
+    flex-direction: row;
+    border: 1px black solid;
+    width: 80%;
+    justify-content: space-around;
+    padding: 20px 0 20px 0;
+}
+
+.zonaNumeros {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2, 1fr auto);
+    gap: 3px;
+    
+}
+
+.zonaNumeros button:last-child {
+    grid-column: 1 / span 3; /* Ocupa desde la segunda columna hasta 2 columnas siguientes */
+}
+
+.zonaOperaciones {
+    display: grid;
+    grid-template-rows: (1,1fr auto);
+    gap: 5px;
+    /* border: 1px black solid; */
+    width: 60px
+}
+.zonaOperaciones button:last-child {
+    margin-top: 25%;
+}
+
+
+
+.botoncitoNumeros {
+    padding: 15px;
+    font-size: large;
+}
+
+.botoncitoOperaciones {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    font-size: large;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.botonReset{
+    padding: 10px;
+    background-color: rgb(123, 8, 8);
+    color: beige;
+    
+}
